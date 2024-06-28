@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Thasadith", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Common styles for all pages */
+.name {
+    font-family: "Ysabeau SC", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.menu {
+    font-family: "Ysabeau SC", sans-serif;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0 1rem;
+}
+
+.menu a:hover {
+    font-weight: 700;
+}
+
+.viewport {
+    overflow: hidden;
+    background-color: #DCF2F1;
+    text-align: center;
+    position: relative;
+}
+
+.viewport img {
+    width: 100%;
+    height: auto;
+}
+
+.viewport p {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.season-finest {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.season-finest h2 {
+    font-family: "Ysabeau SC", sans-serif;
+    font-size: 2.5rem;
+}
+
+.image-overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-overlay img {
+    width: 20rem;
+    margin: 1rem;
+}
+
+.overlay1 {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    text-align: center;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-overlay div {
+    position: relative;
+}
+
+.image-overlay div:hover .overlay1 {
+    opacity: 1;
+}
+
+.infographic {
+    background-color: #DCF2F1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.infographic h2 {
+    font-family: "Ysabeau SC", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.infographic p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.mission {
+    display: inline-block;
+    max-width: 15rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    background: #f1f1f1;
+}
+
+.aspen-diary, .foot1, .foot2 {
+    flex: 1;
+    margin-bottom: 1rem;
+    max-width: 400px;
+    text-align: center;
+}
+
+.aspen-diary h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#emailaccount {
+    width: calc(100% - 110px);
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+#but2 {
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.foot1 a, .foot2 a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        font-size: 1.2rem;
+    }
+
+    .viewport p {
+        font-size: 1.2rem;
+    }
+
+    .image-overlay img {
+        width: 15rem;
+    }
+
+    .infographic p {
+        font-size: 1.1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot1, .foot2 {
+        text-align: center;
+    }
+}
+
+/* About Page */
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.top section {
+    flex: 1;
+}
+
+.top h1 {
+    font-family: "Ysabeau SC", sans-serif;
+    font-size: 2rem;
+}
+
+.top nav {
+    flex: 2;
+    text-align: right;
+}
+
+.top nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.top nav a:hover {
+    font-weight: 700;
+}
+
+.top .material-symbols-outlined {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+.head {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    text-align: center;
+}
+
+.head img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.head p {
+    flex: 2;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.head mark {
+    background-color: #DCF2F1;
+    font-style: italic;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .top nav {
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .head {
+        text-align: left;
+    }
+
+    .head img {
+        margin: 0 auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot1, .foot2 {
+        text-align: center;
+    }
+}
+
+/* Fresh Flowers Page */
+.fresh-flowers {
+    text-align: center;
+    padding: 2rem 0;
+    background: #f1f1f1;
+}
+
+.fresh-flowers h3 {
+    font-family: "Ysabeau SC", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    text-align: center;
+    background: #fff;
+    max-width: 20rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    font-family: "Thasadith", sans-serif;
+    margin: 0.5rem 0;
+}
+
+.card .price {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.card button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.card button:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Gifts Page */
+.gift-card {
+    background-color: #DCF2F1;
+    width: 100%;
+    max-width: 35rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.gift-card img {
+    width: 8rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.gift-card p {
+    font-size: 1rem;
+    margin: 0;
+    flex: 1;
+}
+
+.card-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .card-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Occasions Page */
+.stats {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.stats p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stats-img {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.stats-img img {
+    width: 100%;
+    max-width: 35rem;
+    height: auto;
+    border: 1.5rem solid #DCF2F1;
+}
+
+.stats-img p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .stats p, .stats-img p, .paragraph {
+        font-size: 1.2rem;
+    }
+
+    .stats-img img {
+        border-width: 1rem;
+    }
+}
+
+/* Contact Page */
+.details {
+    padding: 2rem;
+    text-align: center;
+}
+
+.details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.location {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.location a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.location a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.container input[type=text], .container textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.container textarea {
+    height: 150px;
+}
+
+.container input[type=submit] {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .details h2, .location, .container input[type=text], .container textarea, .container input[type=submit] {
+        font-size: 1rem;
+    }
+
+    .container textarea {
+        height: 100px;
+    }
+}
